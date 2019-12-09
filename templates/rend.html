@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  {% if name %}
+    <h5>Hello {{ name }}!</h5>
+  {% else %}
+    <h5>it is render page without name</h5>
+  {% endif %}
+  <a href="../main">back to main</a>
+  <p>
+      {% print("from render template") %}
+<!--
+ i=0 ; while(i<9): print("i= ",i) ; i+=1
+-->
+<p><a href="../void">go to void</a>
+<p><a href="../page1">go to page1</a>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h5>Upload page</h5>
+<h4>Name is {{ name }}, password is {{password}}</h4>
+<br>
+
+<input type="text" id="dat1">
+<p>click for upload to server</p>
+<input id='btn-upload'  type="button" name="" value="Upload">
+<p>{{data}}</p>
+<br>
+<h5>data for ajax form</h5>
+<form>
+  <input id="dat2" type="text" name="data" value="" placeholder="data">
+  <input type="submit" name="" value="send">
+</form>
+<br>
+<div id="out">area for out</div>
+
+
+
+<style media="screen">
+  body{
+    background: #FFF0F5; //LavenderBlush
+  }
+</style>
+<script src=../static/js/upload.js></script>
+{% endblock %}
+
+
+
+
+
+<!--
+<table border="1">
+ for k,v in result.items()
+<tr>
+  <th>
+    {{k}}
+  </th>
+  <th>
+    {{v}}
+  </th>
+</tr>
+ endfor
+</table>
+-->
